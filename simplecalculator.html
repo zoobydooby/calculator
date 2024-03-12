@@ -23,6 +23,8 @@
 <button onclick="divideNumbers()">Divide</button>
 <button onclick="modNumber()">mod</button>
 <button onclick="squareNumber()">square</button>
+<button onclick="sine()">sine</button>
+<button onclick="cosine()">cos</button>
 
 <p id="result">Result: </p>
 
@@ -74,6 +76,18 @@
         var num1 = parseFloat(document.getElementById("num1").value);
         // var num2 = parseFloat(document.getElementById("num2").value);
         var result=num1*num1;
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    function sine() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        // var num2 = parseFloat(document.getElementById("num2").value);
+        var result=Math.sin(num1);
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    function cosine() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        // var num2 = parseFloat(document.getElementById("num2").value);
+        var result=Math.cos(num1);
             document.getElementById("result").innerText = "Result: " + result;
         }
 </script>
