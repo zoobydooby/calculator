@@ -25,6 +25,8 @@
 <button onclick="squareNumber()">square</button>
 <button onclick="sine()">sine</button>
 <button onclick="cosine()">cos</button>
+<button onclick="tan()"><i>tan</i></button>
+
 
 <p id="result">Result: </p>
 <p>i changed the git file code to github</p>
@@ -90,6 +92,12 @@
         var num1 = parseFloat(document.getElementById("num1").value);
         // var num2 = parseFloat(document.getElementById("num2").value);
         var result=Math.cos(num1);
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    function tan() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        // var num2 = parseFloat(document.getElementById("num2").value);
+        var result=Math.tan(num1);
             document.getElementById("result").innerText = "Result: " + result;
         }
 </script>
