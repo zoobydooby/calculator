@@ -26,6 +26,7 @@
 <button onclick="sine()">sine</button>
 <button onclick="cosine()">cos</button>
 <button onclick="tan()"><i>tan</i></button>
+<button onclick="abs()"><i>abs</i></button>
 
 
 <p id="result">Result: </p>
@@ -98,6 +99,12 @@
         var num1 = parseFloat(document.getElementById("num1").value);
         // var num2 = parseFloat(document.getElementById("num2").value);
         var result=Math.tan(num1);
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    function abs() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        // var num2 = parseFloat(document.getElementById("num2").value);
+        var result=Math.abs(num1);
             document.getElementById("result").innerText = "Result: " + result;
         }
 </script>
